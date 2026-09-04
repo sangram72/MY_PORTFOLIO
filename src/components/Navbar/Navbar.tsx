@@ -137,14 +137,7 @@ const Navbar = () => {
               Contact
             </button>
 
-            {/* Mobile Login */}
-            <Link
-              to="/login"
-              onClick={() => setIsMenuOpen(false)}
-              className="rounded-lg border border-white/20 px-4 py-2 text-center text-white transition hover:bg-white hover:text-black"
-            >
-              Login
-            </Link>
+        
 
           </div>
         </div>
