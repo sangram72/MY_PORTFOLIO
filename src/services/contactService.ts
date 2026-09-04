@@ -8,7 +8,7 @@ interface ContactResponse {
   message: string;
 }
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://my-portfolio-backend-0pzm.onrender.com/api";
 
 export const sendContactMessage = async (
   contactData: ContactData
