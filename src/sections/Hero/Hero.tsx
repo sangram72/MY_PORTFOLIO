@@ -78,7 +78,7 @@ const Hero = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/sangram-nandi-2831ba180/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-medium text-gray-500 transition hover:text-white"
@@ -87,7 +87,7 @@ const Hero = () => {
             </a>
 
             <a
-              href="/resume.pdf"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-medium text-gray-500 transition hover:text-white"
