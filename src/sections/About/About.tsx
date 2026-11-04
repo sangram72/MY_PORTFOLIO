@@ -1,6 +1,10 @@
+
 const About = () => {
   return (
-    <section id="about" className="bg-black px-6 py-24">
+    <section
+      id="about"
+      className="bg-black px-6 py-24"
+    >
       <div className="mx-auto max-w-7xl">
 
         {/* Section Heading */}
@@ -8,6 +12,10 @@ const About = () => {
           <p className="mb-3 text-sm uppercase tracking-[0.3em] text-gray-500">
             About Me
           </p>
+
+          <h2 className="text-3xl font-bold text-white md:text-5xl">
+            Building Scalable Applications & AI-Powered Solutions
+          </h2>
         </div>
 
         {/* Content */}
@@ -16,66 +24,80 @@ const About = () => {
           {/* Left */}
           <div>
             <p className="text-lg leading-8 text-gray-400">
-              I'm a Software Engineer with 3.8+ years of experience building
-              responsive, scalable, and user-focused web and mobile
-              applications.
+              I'm a Software Engineer with nearly 4 years of
+              experience designing, developing, and deploying
+              scalable, responsive, and user-focused web and
+              mobile applications.
             </p>
 
             <p className="mt-6 text-lg leading-8 text-gray-400">
-              My primary expertise is in React.js, React Native, JavaScript,
-              TypeScript, Node.js, and the MERN stack. I build modern web
-              applications with React.js and cross-platform mobile
-              applications with React Native for both Android and iOS.
+              My core expertise includes React.js, Next.js,
+              JavaScript, TypeScript, React Native, Node.js,
+              Express.js, and MongoDB. I enjoy building
+              end-to-end applications, developing reusable
+              components, integrating RESTful APIs, and
+              creating efficient application architectures.
             </p>
 
             <p className="mt-6 text-lg leading-8 text-gray-400">
-              I'm particularly interested in frontend architecture,
-              reusable components, state management, API integration,
-              performance optimization, and creating smooth experiences
-              across web and mobile platforms.
+              Alongside full-stack development, I'm actively
+              working with Generative AI technologies,
+              including Python, Retrieval-Augmented Generation
+              (RAG), Large Language Models (LLMs), LangChain,
+              LangGraph, and vector databases such as ChromaDB.
+            </p>
+
+            <p className="mt-6 text-lg leading-8 text-gray-400">
+              I also work with AI ecosystems such as OpenAI,
+              Anthropic Claude, and Google Gemini, exploring
+              prompt engineering and building AI-powered
+              applications that solve real-world problems.
+            </p>
+
+            <p className="mt-6 text-lg leading-8 text-gray-400">
+              I'm passionate about continuous learning,
+              engineering scalable solutions, optimizing
+              application performance, and combining modern
+              software development with emerging AI technologies.
             </p>
           </div>
 
-          {/* Right */}
+          {/* Right - Highlights */}
           <div className="grid grid-cols-2 gap-6">
 
-            <div className="rounded-xl border border-white/10 p-6">
+            <div className="rounded-xl border border-white/10 bg-white/[0.02] p-6 transition hover:border-blue-400/40">
               <h3 className="text-4xl font-bold text-white">
-                3+
+                4+
               </h3>
-
               <p className="mt-2 text-gray-500">
                 Years of Experience
               </p>
             </div>
 
-            <div className="rounded-xl border border-white/10 p-6">
+            <div className="rounded-xl border border-white/10 bg-white/[0.02] p-6 transition hover:border-blue-400/40">
               <h3 className="text-4xl font-bold text-white">
                 10+
               </h3>
-
               <p className="mt-2 text-gray-500">
-                Projects
+                Projects Developed
               </p>
             </div>
 
-            <div className="rounded-xl border border-white/10 p-6">
-              <h3 className="text-4xl font-bold text-white">
-                Web + Mobile
+            <div className="rounded-xl border border-white/10 bg-white/[0.02] p-6 transition hover:border-blue-400/40">
+              <h3 className="text-3xl font-bold text-white">
+                MERN
               </h3>
-
               <p className="mt-2 text-gray-500">
-                Development
+                Full Stack Development
               </p>
             </div>
 
-            <div className="rounded-xl border border-white/10 p-6">
-              <h3 className="text-4xl font-bold text-white">
-                React Native
+            <div className="rounded-xl border border-white/10 bg-white/[0.02] p-6 transition hover:border-blue-400/40">
+              <h3 className="text-3xl font-bold text-white">
+                AI + RAG
               </h3>
-
               <p className="mt-2 text-gray-500">
-                Android & iOS
+                Generative AI Development
               </p>
             </div>
 
