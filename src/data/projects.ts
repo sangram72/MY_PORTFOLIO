@@ -1,67 +1,76 @@
+
 export const projects = [
   {
     id: 1,
-    title: "E-Commerce Application",
+    title: "RAG-Based AI Chatbot",
     description:
-      "A responsive e-commerce application with product listing, search, filtering, sorting, and cart functionality.",
+      "Developed a local AI-powered Retrieval-Augmented Generation (RAG) chatbot that allows users to upload PDF, DOCX, and TXT documents and ask context-aware questions. Implemented semantic search, document-grounded responses with source citations, citation validation, and persistent multi-turn conversation history.",
     technologies: [
-      "React.js",
-      "TypeScript",
-      "Redux",
-      "Tailwind CSS",
-      "REST API",
+      "Python",
+      "LangChain",
+      "LangGraph",
+      "FastAPI",
+      "ChromaDB",
+      "Ollama",
+      "Llama 3.2",
+      "SQLite",
+      "HuggingFace"
     ],
-    category: "Frontend",
-    githubUrl: "#",
+    category: "AI / Generative AI",
+    githubUrl: "https://github.com/sangram72/Rag_Based_Chat_Bot",
     liveUrl: "#",
   },
 
   {
     id: 2,
-    title: "MERN Stack Application",
+    title: "Hospital OPD Management System",
     description:
-      "A full-stack application built with React, Node.js, Express, and MongoDB with authentication and REST API integration.",
+      "Developed a web-based hospital outpatient department (OPD) application using React and Firebase. Integrated application routing, document generation, PDF reporting, and reusable UI components to support hospital-related workflows.",
     technologies: [
       "React.js",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "REST API",
+      "JavaScript",
+      "Firebase",
+      "React Router",
+      "Vite",
+      "jsPDF",
+      "HTML2Canvas"
     ],
     category: "Full Stack",
-    githubUrl: "#",
-    liveUrl: "#",
+    githubUrl: "https://github.com/sangram72/Hospital_OPD_System",
+    liveUrl: "https://hospital-opd-system.vercel.app/",
   },
 
   {
     id: 3,
-    title: "React Native Application",
+    title: "Interview Preparation AI Chatbot",
     description:
-      "A cross-platform mobile application developed with React Native for both Android and iOS platforms.",
+      "Built an AI-powered interview preparation chatbot using React, TypeScript, and Google's Gemini API. Integrated generative AI capabilities to create an interactive conversational experience for interview preparation.",
     technologies: [
-      "React Native",
+      "React.js",
       "TypeScript",
-      "Redux",
-      "REST API",
+      "Google Gemini API",
+      "Google GenAI SDK",
+      "Vite"
     ],
-    category: "Mobile",
-    githubUrl: "#",
-    liveUrl: "#",
+    category: "AI / Generative AI",
+    githubUrl: "https://github.com/sangram72/INTERVIEW_PREPARTION_CHATBOT_GEMINI",
+    liveUrl: "https://interviewchatbot-opal.vercel.app/",
   },
 
   {
     id: 4,
-    title: "Admin Dashboard",
+    title: "Blackjack Game",
     description:
-      "A responsive admin dashboard with reusable components, data visualization, filtering, and API integration.",
+      "Developed an interactive browser-based Blackjack card game using React. Implemented reusable components and application routing to deliver an engaging game experience with a responsive user interface.",
     technologies: [
       "React.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "REST API",
+      "JavaScript",
+      "React Router",
+      "Vite",
+      "CSS3"
     ],
     category: "Frontend",
-    githubUrl: "#",
-    liveUrl: "#",
+    githubUrl: "https://github.com/sangram72/Blackjack-Game",
+    liveUrl: "https://blackjack-game-kohl-eight.vercel.app/",
   },
 ];
