@@ -1,5 +1,33 @@
+
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import { skills } from "../../data/skills";
+
+const skillCategories = [
+  {
+    title: "Frontend Development",
+    skills: skills.frontend,
+  },
+  {
+    title: "Mobile Development",
+    skills: skills.mobile,
+  },
+  {
+    title: "Backend Development",
+    skills: skills.backend,
+  },
+  {
+    title: "AI & Generative AI",
+    skills: skills.aiAndGenerativeAI,
+  },
+  {
+    title: "Databases & Storage",
+    skills: skills.databasesAndStorage,
+  },
+  {
+    title: "Tools & Platforms",
+    skills: skills.toolsAndPlatforms,
+  },
+];
 
 const Skills = () => {
   return (
@@ -14,79 +42,29 @@ const Skills = () => {
           title="Technologies I work with"
         />
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
-          {/* Frontend */}
-          <div className="rounded-2xl border border-white/10 p-8">
-            <h3 className="mb-6 text-xl font-semibold text-white">
-              Frontend
-            </h3>
+          {skillCategories.map((category) => (
+            <div
+              key={category.title}
+              className="group rounded-2xl border border-white/10 bg-white/[0.02] p-8 transition-all duration-300 hover:border-white/25 hover:bg-white/[0.04]"
+            >
+              <h3 className="mb-6 text-xl font-semibold text-white transition-colors group-hover:text-blue-400">
+                {category.title}
+              </h3>
 
-            <div className="flex flex-wrap gap-3">
-              {skills.frontend.map((skill) => (
-                <span
-                  key={skill}
-                  className="rounded-lg border border-white/10 px-4 py-2 text-sm text-gray-400 transition hover:border-white/30 hover:text-white"
-                >
-                  {skill}
-                </span>
-              ))}
+              <div className="flex flex-wrap gap-3">
+                {category.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-lg border border-white/10 bg-white/[0.03] px-4 py-2 text-sm text-gray-400 transition-all duration-300 hover:border-blue-400/50 hover:bg-blue-400/10 hover:text-white"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
-
-          {/* Mobile */}
-          <div className="rounded-2xl border border-white/10 p-8">
-            <h3 className="mb-6 text-xl font-semibold text-white">
-              Mobile
-            </h3>
-
-            <div className="flex flex-wrap gap-3">
-              {skills.mobile.map((skill) => (
-                <span
-                  key={skill}
-                  className="rounded-lg border border-white/10 px-4 py-2 text-sm text-gray-400 transition hover:border-white/30 hover:text-white"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          {/* Backend */}
-          <div className="rounded-2xl border border-white/10 p-8">
-            <h3 className="mb-6 text-xl font-semibold text-white">
-              Backend
-            </h3>
-
-            <div className="flex flex-wrap gap-3">
-              {skills.backend.map((skill) => (
-                <span
-                  key={skill}
-                  className="rounded-lg border border-white/10 px-4 py-2 text-sm text-gray-400 transition hover:border-white/30 hover:text-white"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          {/* Tools */}
-          <div className="rounded-2xl border border-white/10 p-8">
-            <h3 className="mb-6 text-xl font-semibold text-white">
-              Tools
-            </h3>
-
-            <div className="flex flex-wrap gap-3">
-              {skills.tools.map((skill) => (
-                <span
-                  key={skill}
-                  className="rounded-lg border border-white/10 px-4 py-2 text-sm text-gray-400 transition hover:border-white/30 hover:text-white"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
+          ))}
 
         </div>
       </div>
