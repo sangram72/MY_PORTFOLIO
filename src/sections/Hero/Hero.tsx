@@ -1,17 +1,21 @@
+
 const Hero = () => {
   return (
     <section
       id="home"
       className="relative flex min-h-screen items-center overflow-hidden bg-black px-6 pt-24"
     >
-      {/* Background */}
-      <div className="absolute inset-0">
-        <div className="absolute left-1/2 top-1/3 h-72 w-72 -translate-x-1/2 rounded-full bg-white/5 blur-3xl" />
+      {/* Background Effects */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute left-1/2 top-1/3 h-96 w-96 -translate-x-1/2 rounded-full bg-blue-500/[0.08] blur-[120px]" />
+
+        <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-purple-500/[0.05] blur-[120px]" />
       </div>
 
       {/* Content */}
       <div className="relative mx-auto w-full max-w-7xl">
-        <div className="max-w-4xl">
+        <div className="max-w-5xl">
+
           <p className="mb-5 text-sm font-medium uppercase tracking-[0.3em] text-gray-500">
             Hello, I'm
           </p>
@@ -19,68 +23,118 @@ const Hero = () => {
           <h1 className="text-5xl font-bold leading-tight tracking-tight text-white sm:text-6xl lg:text-8xl">
             Sangram
             <br />
-            <span className="text-gray-500">Nandi.</span>
+            <span className="bg-gradient-to-r from-gray-400 to-gray-600 bg-clip-text text-transparent">
+              Nandi.
+            </span>
           </h1>
 
-          <h2 className="mt-6 text-2xl font-medium text-gray-300 sm:text-3xl">
+          {/* Professional Title */}
+          <h2 className="mt-7 text-2xl font-semibold text-white sm:text-3xl">
             Software Engineer
           </h2>
 
-          <p className="mt-6 max-w-2xl text-base leading-8 text-gray-400 sm:text-lg">
-            I build responsive, scalable, and user-focused web applications
-            using React.js, TypeScript, Node.js, and modern web technologies.
+          <p className="mt-3 text-lg font-medium text-blue-400 sm:text-xl">
+            Full Stack Development | Generative AI
+          </p>
+
+          {/* Description */}
+          <p className="mt-7 max-w-3xl text-base leading-8 text-gray-400 sm:text-lg">
+            Software Engineer with nearly 4 years of experience building
+            scalable web applications, SaaS platforms, and AI-powered
+            solutions. Experienced in React.js, Next.js, Node.js,
+            Python, and modern Generative AI technologies, including
+            RAG, LLMs, LangChain, and LangGraph.
           </p>
 
           {/* Buttons */}
           <div className="mt-10 flex flex-wrap gap-4">
+
             <a
               href="#projects"
-              className="rounded-lg bg-white px-6 py-3 font-medium text-black transition hover:bg-gray-200"
+              className="rounded-lg bg-white px-7 py-3.5 font-semibold text-black transition duration-300 hover:-translate-y-1 hover:bg-gray-200"
             >
-              View My Work
+              Explore My Work
             </a>
 
             <a
               href="#contact"
-              className="rounded-lg border border-white/20 px-6 py-3 font-medium text-white transition hover:bg-white/10"
+              className="rounded-lg border border-white/20 px-7 py-3.5 font-semibold text-white transition duration-300 hover:-translate-y-1 hover:border-white/50 hover:bg-white/10"
             >
-              Contact Me
+              Let's Connect
             </a>
+
           </div>
 
           {/* Social Links */}
-          <div className="mt-12 flex items-center gap-6">
+          <div className="mt-12 flex flex-wrap items-center gap-7">
+
             <a
-              href="#"
-              className="text-sm text-gray-500 transition hover:text-white"
+              href="https://github.com/sangram72"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-gray-500 transition hover:text-white"
             >
-              GitHub
+              GitHub ↗
             </a>
 
             <a
-              href="#"
-              className="text-sm text-gray-500 transition hover:text-white"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-gray-500 transition hover:text-white"
             >
-              LinkedIn
+              LinkedIn ↗
             </a>
 
             <a
-              href="#"
-              className="text-sm text-gray-500 transition hover:text-white"
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-gray-500 transition hover:text-white"
             >
-              Resume
+              Download Resume ↗
             </a>
+
           </div>
+
+          {/* Experience Highlight */}
+          <div className="mt-14 flex flex-wrap gap-10 border-t border-white/10 pt-8">
+
+            <div>
+              <h3 className="text-3xl font-bold text-white">4+</h3>
+              <p className="mt-1 text-sm text-gray-500">
+                Years Experience
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-3xl font-bold text-white">Full Stack</h3>
+              <p className="mt-1 text-sm text-gray-500">
+                Web & Mobile Development
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-3xl font-bold text-white">AI / RAG</h3>
+              <p className="mt-1 text-sm text-gray-500">
+                Generative AI Development
+              </p>
+            </div>
+
+          </div>
+
         </div>
       </div>
 
       {/* Scroll Indicator */}
       <a
         href="#about"
-        className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-gray-500 md:flex"
+        className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-gray-500 transition hover:text-white md:flex"
       >
-        <span className="text-xs uppercase tracking-widest">Scroll</span>
-        <span className="text-lg">↓</span>
+        <span className="text-xs uppercase tracking-widest">
+          Scroll to explore
+        </span>
+        <span className="animate-bounce text-xl">↓</span>
       </a>
     </section>
   );
